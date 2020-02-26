@@ -39,7 +39,7 @@ BorderImage {
       text: (metatext) ? metatext : ""
 
       color: "#F2F2F2"
-      font.pixelSize: vpx(8)
+      font.pixelSize: vpx(12)
       //font.family: globalFonts.sans
       font.bold: true
       font.capitalization: Font.AllUppercase

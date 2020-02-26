@@ -30,9 +30,9 @@ Item {
   function boxArtWidth()
   {
     if (boxart.width > boxart.height)
-      return vpx(350)
+      return vpx(500)
     else
-      return vpx(275)
+      return vpx(375)
   }
 
   onFocusChanged: {
@@ -173,9 +173,9 @@ Item {
       // NOTE: Need the container for the dropshadow (until I figure out how to combine layer styles)
       id: boxContainer
 
-      width: vpx(300)
+      //width: vpx(300)
       height: boxart.height
-      //width: (boxart.width > boxart.height) ? vpx(350) : vpx(275)
+      width: (boxart.width > boxart.height) ? vpx(500) : vpx(375)
 
 
       anchors {
@@ -280,7 +280,7 @@ Item {
         Layout.fillWidth: true;
         text: gameData.title
         color: "white"
-        font.pixelSize: vpx(40)
+        font.pixelSize: vpx(30)
         font.family: subtitleFont.name
         font.bold: true
         //font.capitalization: Font.AllUppercase
@@ -352,9 +352,9 @@ Item {
       PegasusUtils.AutoScroll
       {
         id: gameDescription
-        Layout.maximumHeight: vpx(145)
+        Layout.maximumHeight: vpx(300)
         Layout.fillWidth: true;
-        height: vpx(145)
+        height: vpx(300)
 
         Text {
 
